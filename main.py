@@ -7,37 +7,38 @@ with st.sidebar:
 if selected == "Task-1 & 2":
     st.subheader("Positive or Negative number:")
     st.code("""
-    #include <stdio.h>
-    int main()
-    {
-        int num = 23;
+           #include <stdio.h>
 
-        //Conditions to check if the number is negative/positive or zero
+        int main() {
+        int num;
+        printf("Enter a number: ");
+        scanf("%d", &num); 
         if (num > 0)
-            printf("The number is positive");
+          printf("%d is positive.\n", num);
         else if (num < 0)
-            printf("The number is negative");
+          printf("%d is negative.\n", num);
         else
-            printf("Zero");
+          printf("The number is zero.\n");
 
         return 0;
     }
+
     """, language="c")
 
     st.subheader("Odd or Even number:")
 
     st.code("""
-    #include <stdio.h>
-    int main()
-    {
-        int num = 23;
+   #include <stdio.h>
 
-        //Conditions to check if the number is odd/even
-        if (num % 2 == 0)
-            printf("The number is even");
-        else
-            printf("The number is odd");
+    int main() {
+    int num;
+    printf("Enter a number: ");
+    scanf("%d", &num);
+    if (num % 2 == 0)
+        printf("%d is even.\n", num);
+    else
+        printf("%d is odd.\n", num);
 
-        return 0;
+    return 0;
     }
     """, language="c")
