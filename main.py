@@ -1,11 +1,13 @@
 import streamlit as st
 from streamlit_option_menu import option_menu
 
+st.header("100 Days `C Programming` Tasks By Venkatesh ")
+
 with st.sidebar:
     selected = option_menu("100 Days Task", ["Task-1 & 2", "Task-3 & 4"], icons=["book", "book"], menu_icon="cast", default_index=0)
 
 if selected == "Task-1 & 2":
-    st.subheader("Positive or Negative number:")
+    st.subheader("1. Positive or Negative number:")
     st.code("""
            #include <stdio.h>
 
@@ -25,7 +27,7 @@ if selected == "Task-1 & 2":
 
     """, language="c")
 
-    st.subheader("Odd or Even number:")
+    st.subheader("2. Odd or Even number:")
 
     st.code("""
    #include <stdio.h>
