@@ -44,3 +44,6 @@ if selected == "Task-1 & 2":
     return 0;
     }
     """, language="c")
+
+
+st.balloons()
