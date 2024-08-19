@@ -4,10 +4,11 @@ from streamlit_option_menu import option_menu
 st.header("100 Days `C Programming` Tasks By Venkatesh ")
 
 with st.sidebar:
-    selected = st.radio(" `C Programming 100 Days Task`", 
-    options=["Positive or Negative number", "Odd or Even number","Sum of First N Natural numbers"])
+    selected = option_menu(menu_title="100 Days Task", 
+    options=["Positive or Negative", "Odd or Even","Sum of First N Natural"], menu_icon="cast",icons=["book", "book", "book"], default_index=0)
+    
 
-if selected == "Positive or Negative number":
+if selected == "Positive or Negative":
     st.subheader("1. Positive or Negative number:")
     st.code("""
            #include <stdio.h>
@@ -28,7 +29,7 @@ if selected == "Positive or Negative number":
 
     """, language="c")
 
-elif selected == "Odd or Even number":
+elif selected == "Odd or Even":
 
     st.subheader("2. Odd or Even number:")
 
@@ -47,7 +48,7 @@ elif selected == "Odd or Even number":
     return 0;
     }
     """, language="c")
-elif selected == "Sum of First N Natural numbers":
+elif selected == "Sum of First N Natural":
     st.subheader("3. Sum of First N Natural numbers :")
 
     st.write("you can use the formula:")
