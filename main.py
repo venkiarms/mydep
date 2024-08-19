@@ -73,6 +73,10 @@ if selected == "Task-1 & 2":
 
     """, language="c")
 
+    st.subheader("Keypoints :")
+ 
+    st.write(' `long long` is used to store large numbers. ')
+
 
   
 
