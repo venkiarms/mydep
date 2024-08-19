@@ -44,6 +44,37 @@ if selected == "Task-1 & 2":
     return 0;
     }
     """, language="c")
+    
+    st.subheader("3. Sum of First N Natural numbers :")
+
+    st.write("you can use the formula:")
+
+    st.latex(r'Sum = \frac{N \times (N + 1)}{2}')
+
+    st.code("""
+   #include <stdio.h>
+
+    int main() {
+    int N;
+    long long sum;
+
+    
+    printf("Enter the value of N: ");
+    scanf("%d", &N);
+
+    
+    sum = (long long)N * (N + 1) / 2;
+
+    
+    printf("The sum of the first %d natural numbers is: %lld\n", N, sum);
+
+    return 0;
+    }
+
+    """, language="c")
+
+
+  
 
 
 st.balloons()
