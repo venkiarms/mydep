@@ -4,9 +4,10 @@ from streamlit_option_menu import option_menu
 st.header("100 Days `C Programming` Tasks By Venkatesh ")
 
 with st.sidebar:
-    selected = option_menu("100 Days Task", ["Task-1 & 2", "Task-3 & 4"], icons=["book", "book"], menu_icon="cast", default_index=0)
+    selected = st.radio(" `C Programming 100 Days Task`", 
+    options=["Positive or Negative number", "Odd or Even number","Sum of First N Natural numbers"])
 
-if selected == "Task-1 & 2":
+if selected == "Positive or Negative number":
     st.subheader("1. Positive or Negative number:")
     st.code("""
            #include <stdio.h>
@@ -27,6 +28,8 @@ if selected == "Task-1 & 2":
 
     """, language="c")
 
+elif selected == "Odd or Even number":
+
     st.subheader("2. Odd or Even number:")
 
     st.code("""
@@ -44,7 +47,7 @@ if selected == "Task-1 & 2":
     return 0;
     }
     """, language="c")
-    
+elif selected == "Sum of First N Natural numbers":
     st.subheader("3. Sum of First N Natural numbers :")
 
     st.write("you can use the formula:")
@@ -76,9 +79,6 @@ if selected == "Task-1 & 2":
     st.subheader("Keypoints :")
  
     st.write(' `long long` is used to store large numbers. ')
-
-
-  
 
 
 st.balloons()
